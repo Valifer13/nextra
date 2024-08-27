@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url(/src/assets/images/hero.jpg)"
+        'hero-pattern': "url(/src/assets/images/hero.jpg)",
+        'stat-pattern': "url(/src/assets/images/Pantai Sanur.jpg)"
       }
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
+      'cinzel': ['Cinzel', 'serif']
     }
   },
   plugins: [

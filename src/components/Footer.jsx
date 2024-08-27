@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-5">
+        <div className="mt-16 grid grid-cols-1 gap-8 border-t border-gray-100 pt-16 md:grid-cols-3 lg:grid-cols-5">
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-gray-900">Resources</p>
 
@@ -20,7 +20,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </a>
@@ -29,17 +29,17 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/destinations"
                 >
                   {" "}
-                  Destination{" "}
+                  Destinations{" "}
                 </a>
               </li>
 
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/staycations"
                 >
                   Staycations
                 </a>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/about"
                 >
                   {" "}
                   About Us{" "}
@@ -64,7 +64,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/careers"
                 >
                   {" "}
                   Careers{" "}
@@ -74,7 +74,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/press"
                 >
                   Press
                 </a>
@@ -83,7 +83,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/invest"
                 >
                   {" "}
                   Investors{" "}
@@ -93,7 +93,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/sitempap"
                 >
                   {" "}
                   Sitemap{" "}
@@ -103,7 +103,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/faqs"
                 >
                   FAQa
                 </a>
@@ -118,7 +118,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/faqs"
                 >
                   {" "}
                   FAQs{" "}
@@ -128,7 +128,7 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  href="/support"
                 >
                   {" "}
                   Support{" "}
@@ -138,7 +138,7 @@ const Footer = () => {
               <li>
                 <a
                   className="group justify-center md:justify-start flex gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                  href="#"
+                  href="livechat"
                 >
                   <span className="text-gray-700 transition group-hover:text-gray-700/75">
                     {" "}
@@ -194,7 +194,7 @@ const Footer = () => {
           <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
             <li>
               <a
-                href="#"
+                href="facebook.com"
                 rel="noreferrer"
                 target="_blank"
                 className="text-teal-700 transition hover:text-teal-700/75"
@@ -217,7 +217,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="#"
+                href="instagram.com"
                 rel="noreferrer"
                 target="_blank"
                 className="text-teal-700 transition hover:text-teal-700/75"
@@ -240,7 +240,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="#"
+                href="twitter.com"
                 rel="noreferrer"
                 target="_blank"
                 className="text-teal-700 transition hover:text-teal-700/75"
@@ -259,7 +259,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="#"
+                href="github.com"
                 rel="noreferrer"
                 target="_blank"
                 className="text-teal-700 transition hover:text-teal-700/75"
@@ -282,7 +282,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="#"
+                href="dribble.com"
                 rel="noreferrer"
                 target="_blank"
                 className="text-teal-700 transition hover:text-teal-700/75"

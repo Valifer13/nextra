@@ -13,8 +13,8 @@ import { useState } from "react";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Destination", href: "/destination", current: false },
-  { name: "Staycation", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Staycation", href: "/staycations", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -89,7 +89,7 @@ const Navigation = () => {
                   >
                     <MenuItem>
                       <a
-                        href="#"
+                        href="/dashboard"
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                       >
                         Your Profile
@@ -97,7 +97,7 @@ const Navigation = () => {
                     </MenuItem>
                     <MenuItem>
                       <a
-                        href="#"
+                        href="/dashboard/setting"
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                       >
                         Settings
@@ -105,7 +105,7 @@ const Navigation = () => {
                     </MenuItem>
                     <MenuItem>
                       <a
-                        href="#"
+                        href="/"
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                         onClick={() => setLogin(false)}
                       >
