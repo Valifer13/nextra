@@ -188,7 +188,7 @@ const Footer = () => {
 
         <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
           <p className="text-center text-sm text-gray-500 sm:text-left">
-            Copyright &copy; 2022. All rights reserved.
+            Copyright &copy; 2024. All rights reserved.
           </p>
 
           <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
