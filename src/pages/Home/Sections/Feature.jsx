@@ -47,7 +47,7 @@ const Feature = () => {
         return (
           <div
             key={item.name}
-            className="bg-white rounded-lg p-6 w-full grid gap-4 shadow-lg"
+            className="bg-white rounded-lg p-6 w-full grid gap-4 md:hover:-translate-y-1 md:hover:shadow-lg shadow-lg md:shadow-sm transition-all duration-300 ease-in-out"
           >
             <div className="flex gap-3">
               <img
@@ -58,7 +58,7 @@ const Feature = () => {
               <h2 className="text-1xl md:text-2xl font-bold">{item.title}</h2>
             </div>
             <p>{item.description}</p>
-            <div className="group flex cursor-pointer gap-0 hover:gap-10 transition-all ease-in-out duration-300">
+            <div className="group/arrow flex cursor-pointer gap-0 hover:gap-10 transition-all ease-in-out duration-300">
               <span>{item.name}</span>
               <div className="relative flex">
                 <svg
@@ -67,7 +67,7 @@ const Feature = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-6 group-hover:animate-ping absolute"
+                  className="size-6 group-hover/arrow:animate-ping absolute"
                 >
                   <path
                     strokeLinecap="round"

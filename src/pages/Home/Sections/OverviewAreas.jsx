@@ -1,6 +1,6 @@
-import goaGajahImage from "../../../assets/images/Goa Gajah.jpg";
-import pantaiKuta from "../../../assets/images/pantai_kuta.jpg";
-import pantaiSeminyak from "../../../assets/images/pantai_seminyak.jpg";
+import goaGajahImage from "../../../assets/images/ubud/Goa Gajah.jpg";
+import pantaiKuta from "../../../assets/images/kuta/pantai_kuta.jpg";
+import pantaiSeminyak from "../../../assets/images/seminyak/pantai_seminyak.jpg";
 import CardInfo from "../../../components/CardInfo";
 
 const areas = [
@@ -44,7 +44,9 @@ const Overview = () => {
           const AdditionalClasses = isLastItem
             ? "md:last:col-[1_/_span_2] md:last:row-start-2 md:w-2/4 md:justify-self-center lg:last:col-span-1 lg:last:row-start-1 lg:w-full"
             : null;
-          return <CardInfo item={item} className={AdditionalClasses} />;
+          return (
+            <CardInfo key={index} item={item} className={AdditionalClasses} />
+          );
         })}
       </div>
       <div className="flex gap-4">

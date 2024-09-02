@@ -1,6 +1,6 @@
-import gwkStatue from "../../../assets/images/GWK.jpg";
-import diamondbeach from "../../../assets/images/Pantai Diamond.jpg";
-import puraTanahLot from "../../../assets/images/Pura Tanah Lot.jpg";
+import gwkStatue from "../../../assets/images/uluwatu/GWK.jpg";
+import diamondbeach from "../../../assets/images/nusa_penida/Pantai Diamond.jpg";
+import puraTanahLot from "../../../assets/images/canggu/Pura Tanah Lot.jpg";
 import CardInfo from "../../../components/CardInfo";
 
 const places = [
@@ -40,7 +40,9 @@ const OverviewPlaces = () => {
           const AdditionalClasses = isLastItem
             ? "md:last:col-[1_/_span_2] md:last:row-start-2 md:w-2/4 md:justify-self-center lg:last:col-span-1 lg:last:row-start-1 lg:w-full"
             : null;
-          return <CardInfo item={item} className={AdditionalClasses} />;
+          return (
+            <CardInfo key={index} item={item} className={AdditionalClasses} />
+          );
         })}
       </div>
     </section>

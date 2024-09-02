@@ -1,9 +1,17 @@
+import HeroDestination from "./Sections/HeroDestination";
+import Introduction from "./Sections/Introduction";
+import SearchBar from "../../components/SearchBar";
+import PopularDestination from "./Sections/PopularDestination";
+
 function Destination() {
   return (
-    <section>
-      <h1 className="text-5xl">This is Destination Page</h1>
-    </section>
-  )
+    <div className="font-poppins">
+      <HeroDestination />
+      <SearchBar />
+      <Introduction />
+      <PopularDestination />
+    </div>
+  );
 }
 
 export default Destination;

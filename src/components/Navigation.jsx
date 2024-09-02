@@ -8,24 +8,55 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Destination", href: "/destination", current: false },
-  { name: "Staycation", href: "/staycations", current: false },
-  { name: "Contact", href: "/contact", current: false },
+
+  // ! For future development
+  // { name: "Staycation", href: "/staycations", current: false },
+  // { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+// ? For track url
+const url = new URL(window.location.href);
+const location = url.pathname;
+
 const Navigation = () => {
   const [login, setLogin] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <Disclosure as="nav" className="bg-white fixed top-0 w-full shadow z-10">
+    <Disclosure
+      as="nav"
+      className={`${
+        location === "/" ? "bg-transparent" : "bg-white"
+      } fixed top-0 w-full z-10 ${
+        scrolled ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+      id="navbar"
+    >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -45,7 +76,13 @@ const Navigation = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <h1 className="text-2xl font-bold">NEXTRA</h1>
+              <h1
+                className={`${
+                  scrolled ? "" : "text-black"
+                } text-2xl font-bold text-black`}
+              >
+                NEXTRA
+              </h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -137,7 +174,7 @@ const Navigation = () => {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden bg-white">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton

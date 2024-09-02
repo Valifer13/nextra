@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="container grid lg:grid-flow-col items-center relative z-[2] text-white w-full">
         <div className="container w-full">
-          <h1 className="md:text-7xl text-5xl font-semibold font-poppins sm:text-start text-center mb-3 md:mb-2 text-white sm:text-black">
+          <h1 className="md:text-7xl text-5xl font-semibold font-poppins md:text-start text-center mb-3 md:mb-2 text-white sm:text-black">
             Welcome to Bali
           </h1>
           <p className="font-medium text-gray-100 sm:text-gray-600 mb-10 md:mb-8 text-center md:text-start md:text-2xl">
@@ -72,7 +72,7 @@ const Hero = () => {
               y="0"
               width="180"
               height="180"
-              clip-path="url(#clip)"
+              clipPath="url(#clip)"
             />
 
             <defs>
