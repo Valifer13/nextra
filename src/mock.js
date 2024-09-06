@@ -102,7 +102,7 @@ export const database = {
       place_name: "Ubud Palace",
       place_description:
         "Traditional Balinese palace with distinctive architecture.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/ubud/ubud_palace.jpg"),
       place_type: ["Culture"],
       destination: "Ubud",
     },
@@ -137,7 +137,7 @@ export const database = {
       place_id: 9,
       place_name: "Ground Zero Monument",
       place_description: "Bali Bombing tragedy memorial monument.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/kuta/ground_zero.jpg"),
       place_type: ["Museum"],
       destination: "Kuta",
     },
@@ -198,7 +198,7 @@ export const database = {
       place_name: "Museum Pasifika",
       place_description:
         "An art museum featuring collections from various Asia-Pacific artists.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/nusa_dua/museum.jpg"),
       place_type: ["Museum"],
       destination: "Nusa Dua",
     },
@@ -265,7 +265,7 @@ export const database = {
       place_name: "Tegal Wangi Beach",
       place_description:
         "A hidden beach that is often used as a pre-wedding location.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/jimbaran/tegal_wangi.jpg"),
       place_type: ["Beach"],
       destination: "Jimbaran",
     },
@@ -308,7 +308,7 @@ export const database = {
       place_name: "Le Mayeur Museum",
       place_description:
         "Art museum featuring the works of the Belgian painter, Adrien-Jean Le Mayeur de Merprès.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/sanur/museum.jpg"),
       place_type: ["Museum"],
       destination: "Sanur",
     },
@@ -317,7 +317,7 @@ export const database = {
       place_name: "Bali Seawalker",
       place_description:
         "The activity of walking on the seabed with special equipment.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/sanur/seawalker.jpg"),
       place_type: ["Adventure", "Water Activities"],
       destination: "Sanur",
     },
@@ -334,7 +334,7 @@ export const database = {
       place_id: 32,
       place_name: "Banjar Hot Springs",
       place_description: "Natural hot springs.",
-      place_image: "https://placehold.co/600x400",
+      place_image: require("./assets/images/lovina/hot_spring.jpg"),
       place_type: ["Water Activities"],
       destination: "Lovina",
     },
