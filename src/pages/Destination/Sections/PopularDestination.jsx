@@ -1,8 +1,8 @@
-import mock from "../../../mock.json";
+import { database } from "../../../mock";
 import SlideCard from "../../../components/SlideCard";
 
 const PopularDestination = () => {
-  const datas = mock.destination;
+  const datas = database.destination;
   return (
     <section className="max-w-7xl h-screen mx-auto px-3 lg:px-0">
       <div className="container">
@@ -12,7 +12,7 @@ const PopularDestination = () => {
           </h1>
           <p className="text-gray-600">Most visited destinations in Bali</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-10">
           <SlideCard items={datas} />
         </div>
       </div>

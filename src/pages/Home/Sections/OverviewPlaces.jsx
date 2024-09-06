@@ -1,6 +1,6 @@
 import gwkStatue from "../../../assets/images/uluwatu/GWK.jpg";
 import diamondbeach from "../../../assets/images/nusa_penida/Pantai Diamond.jpg";
-import puraTanahLot from "../../../assets/images/canggu/Pura Tanah Lot.jpg";
+import puraTanahLot from "../../../assets/images/canggu/Pura-Tanah-Lot.jpg";
 import CardInfo from "../../../components/CardInfo";
 
 const places = [

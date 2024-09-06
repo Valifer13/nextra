@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer className="bg-white" id="footer">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex justify-center text-black sm:justify-start text-4xl font-bold">
@@ -29,10 +29,10 @@ const Footer = () => {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/destinations"
+                  href="/destination"
                 >
                   {" "}
-                  Destinations{" "}
+                  Destination{" "}
                 </a>
               </li>
 

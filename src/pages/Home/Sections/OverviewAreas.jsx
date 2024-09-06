@@ -51,7 +51,9 @@ const Overview = () => {
       </div>
       <div className="flex gap-4">
         <button className="bg-white text-black border border-black px-3 lg:py-1 py-2 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300">
-          <span className="text-[24]">See More</span>
+          <span className="text-[24]">
+            <a href="destination">See More</a>
+          </span>
         </button>
         <button className="group flex cursor-pointer justify-center items-center gap-2 hover:gap-10 transition-all ease-in-out duration-300">
           <span>Sign Up</span>

@@ -1,6 +1,10 @@
 {
   "destination": [
     {
+      "id": 0,
+      "name": "All"
+    },
+    {
       "id": 1,
       "name": "Ubud",
       "description": "Ubud is the arts and culture hub of Bali, with many art galleries, museums and traditional dance performances. Its tranquil setting with greenery and terraced rice fields makes it a popular place for meditation, yoga and seeking artistic inspiration.",
@@ -305,6 +309,10 @@
     }
   ],
   "category": [
+    {
+      "id": 0,
+      "name": "All"
+    },
     {
       "id": 1,
       "name": "Nature"

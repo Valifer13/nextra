@@ -32,7 +32,9 @@ const Hero = () => {
                 />
               </svg>
 
-              <span className="text-[24]">Read More</span>
+              <span className="text-[24]">
+                <a href="#feature">Read More</a>
+              </span>
             </button>
             <button className="flex gap-2 text-black bg-white border border-black px-3 py-2 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300">
               <svg

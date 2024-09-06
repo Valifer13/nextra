@@ -10,9 +10,7 @@ import {
 } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
-export default function SelectMenu({ items, title }) {
-  const [selected, setSelected] = useState(items[0]);
-
+export default function SelectMenu({ items, title, selected, setSelected }) {
   return (
     <div className="w-[13rem]">
       <Listbox value={selected} onChange={setSelected}>
